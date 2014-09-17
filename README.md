@@ -2,17 +2,17 @@ Merge Sort in C
 ===============
 
 To Compile: gcc mergesort.c -o sort
-To Run: time ./sort <Segments> <SAMPLE.txt >/dev/null
 
-## To Run
+### To Run
 * Command for Run:  ./sort <Segments> SAMPLE.txt
 * Command for Save: ./sort <Segments>  <SAMPLE.txt >SORTED.txt
 * Command for Time: time ./sort <Segments> <SAMPLE.txt >/dev/null
 
-Segments refers to the number of segments the data should be brokenup into. In other words, if we had 24 data points, and chose a segment size of 5, we would have 4, 5 data point segments and 1, 4 data point segment.
+Segments refers to the number of segments the data should be broken up into. In other words, if we had 24 data points, and chose a segment size of 5, we would have 4, 5 data point segments and 1, 4 data point segment.
 
 For each segment I sort using the qsort() function in c.
 
+### Data Sets
 I provided 3 sample text files with massive ammounts of numbers:
 
 * sampleSetSmall.txt: 	 123 lines @ ~0.5 Kb
