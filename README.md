@@ -4,9 +4,9 @@ Merge Sort in C
 To Compile: gcc mergesort.c -o sort
 
 ### To Run
-* Command for Run:  ./sort <Segments> SAMPLE.txt
-* Command for Save: ./sort <Segments>  <SAMPLE.txt >SORTED.txt
-* Command for Time: time ./sort <Segments> <SAMPLE.txt >/dev/null
+* Command for Run:  ./sort < Segments > SAMPLE.txt
+* Command for Save: ./sort < Segments >  < SAMPLE.txt >SORTED.txt
+* Command for Time: time ./sort < Segments > < SAMPLE.txt >/dev/null
 
 Segments refers to the number of segments the data should be broken up into. In other words, if we had 24 data points, and chose a segment size of 5, we would have 4, 5 data point segments and 1, 4 data point segment.
 
