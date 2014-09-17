@@ -94,13 +94,20 @@ int merge(int *arrayL, int * arrayR, size_t lenL, size_t lenR){
 }
 
 /**
- * Grabs the users unsorted inputlist, returns it in array form
+ * Main Function (loop)
+ * 
+ * argv[1] - segment count
+ *
+ * TODO: Pretty ugly and should be refactored (heavily!!!)
+ *       I've gotten way better at coding IMO...
  */
-int * unsortedUserList(){
+int main(int argc, char **argv){
   
+  int segment_count = atoi(argv[1]);
+  
+  int i = 0;
   char * line = NULL;
-  size_t len = 0;
-  int i = 0;                                // i = number of numbers
+  size_t len = 0;                           // i = number of numbers
   int size = 10;                            // size is the number of slots for int
   int * array = malloc(sizeof(int)*size);   // array[size] stores the inputs
   
@@ -116,23 +123,7 @@ int * unsortedUserList(){
     free(line);
     line = NULL;
   }
-  return array;
-}
-
-/**
- * Main Function (loop)
- * 
- * argv[1] - segment count
- *
- * TODO: Pretty ugly and should be refactored (heavily!!!)
- *       I've gotten way better at coding IMO...
- */
-int main(int argc, char **argv){
-  
-  int segment_count = atoi(argv[1]);
-  
-  int i = 0;
-  int * array = unsortedUserList();
+  free(line);
   
   /* Thread Variables */
   pthread_t * threads = malloc(sizeof(pthread_t) * i);
