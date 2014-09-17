@@ -1,7 +1,9 @@
 Merge Sort in C
 ===============
 
-To Compile: gcc mergesort.c -o sort
+### To Compile 
+
+gcc mergesort.c -o sort
 
 ### To Run
 * Command for Run:  ./sort Segment_Count SAMPLE.txt
